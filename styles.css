@@ -24,6 +24,10 @@ body {
     display: flex; 
 }
 
+.twitter-logo {
+    font-size: larger;
+}
+
 
 .navbar {
     border-right: 1px solid #e8e8e8;
