@@ -9,8 +9,9 @@
     <title>Twitter</title>
 </head>
 <body>
-    <nav>
-        <div class="navbar">
+    <div class="layout">
+        <!--sidebar-->
+        <div class="navbar left-sidebar">
             <ul>
                 <li class="nav-items logo"><a href="#"><i class="fa-brands fa-x-twitter" style="color: #030408;"></i></a></li>
                 <li class="nav-items active-page"><a href="#"><i class="fars fa-solid fa-house" style="color: #030408;"></i>Home</a></li>
@@ -34,6 +35,239 @@
                 </div>
             </ul>
         </div>
-    </nav>
+
+        <!--Main Feed-->
+        <div class="main">
+            <div class="tweet-sticky">
+                <div class="home">
+                    <span>Home</span>
+                </div>
+                <ul class="tweet-container">
+                    <li><a href="#"><span>For You</span></a></li>
+                    <li><a href="#" class="following">Following</a></li>
+                </ul>
+            </div>
+            <div class="your-tweets">
+                <div class="profile-message">
+                  <div style="height: 20px; width: 20px;"><div style="height: calc(100% - -4px); width: calc(100% - -4px);"></div></div><div class="avatar" style="background-image: url(&quot;https://pbs.twimg.com/profile_images/1559818413052252160/SgnrPNUd_normal.png&quot;);"></div>
+                  <span class="tweet-message"><input type="text" style="border: none;" placeholder="What's happening?!"></span>
+                </div>
+
+                <div class="tweet-form">
+                    <div class="tweet-icons">
+                        <i class="profile-icon far fa-image"></i>
+                        <i class="profile-icon far fa-file-image" aria-hidden="true"></i>
+                        <i class="profile-icon fas fa-stream" aria-hidden="true"></i>
+                        <i class=" profile-icon fa-regular fa-face-smile"></i>
+                        <i class=" profile-icon far fa-calendar-check" aria-hidden="true"></i>
+                        <i class=" profile-icon fa-solid fa-location-dot"></i>
+                    </div>
+                    <button class="btn" type="submit">Post</button>
+                  </div>
+              </div>
+
+              <!--Tweets-->
+              <div class="post-tweets">
+                <img class="author-logo" src="./assets/image.jpeg">
+                <div class="post-main">
+                  <div class="post-header">
+                    <div class="author-name">
+                      Selinah Stock
+                    </div>
+                    <div class="author-username">
+                      @stock.sel
+                    </div>
+                    <div class="published-time">
+                      15s
+                    </div>
+                  </div>
+                  <div class="post-content">
+                    Feel, live through images!! 
+                    <img class="post-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1_6EgOCnoYi1sxCp6puG0Y75wrG8xfwECuHckrl_Pu8U_xDNdeEBinQB8cAgpRSM4t4&usqp=CAU">
+                    <div class="post-icons">
+                        <i class="icons fa-regular fa-comment blue"><a class="Post-icon-letters">201</a> </i>
+                        <i class="icons fas fa-retweet green" aria-hidden="true">  <a class="Post-icon-letters">567</a> </i>
+                        <i class=" icons far fa-heart red" aria-hidden="true">  <a class="Post-icon-letters">10.879K </a></i>
+                        <i class=" icons fa-solid blue fa-chart-column"> <a class="Post-icon-letters">69753</a></i>
+                        <i class="  icons fa-solid blue fa-arrow-up-from-bracket"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-tweets">
+                    <img class="author-logo" src="./assets/img-twitter.png">
+                    <div class="post-main">
+                      <div class="post-header">
+                        <div class="author-name">
+                          Elon Musk
+                          
+                        </div>
+                        <div class="author-username">
+                          @elonmusk
+                        </div>
+                        <div class="published-time">
+                          1hr
+                        </div>
+                      </div>
+                      <div class="post-content">
+                        Anyone feeling late stage empire vibes?
+                        <img class="post-img" src="https://pbs.twimg.com/media/F62QKe2XYAAMd3o?format=jpg&name=small">
+                        <div class="post-icons">
+                            <i class="icons fa-regular fa-comment blue"><a class="Post-icon-letters">2.8mil</a> </i>
+                            <i class="icons fas fa-retweet green" aria-hidden="true">  <a class="Post-icon-letters">567.7k</a> </i>
+                            <i class=" icons far fa-heart red" aria-hidden="true">  <a class="Post-icon-letters">100.8K </a></i>
+                            <i class=" icons fa-solid blue fa-chart-column"> <a class="Post-icon-letters">69k</a></i>
+                            <i class="  icons fa-solid blue fa-arrow-up-from-bracket"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-tweets">
+                        <img class="author-logo" src="./assets/img4.jpeg">
+                        <div class="post-main">
+                          <div class="post-header">
+                            <div class="author-name">
+                              Volvo
+                            </div>
+                            <div class="author-username">
+                              @volvo
+                            </div>
+                            <div class="published-time">
+                              30min
+                            </div>
+                          </div>
+                          <div class="post-content">
+                            Meet the new #VolvoEX90. Our first fully electric SUV Featuring Safe Space Technology powered by lidar and a serene Scandinavian interior. The Volvo EX90 offers a driving experience out of the ordinary. 
+                            Pre-order today https://volvoca.rs/3G15RAH #SafetyInMind
+                            <img class="post-img" src="https://pbs.twimg.com/media/FhMPXbIWIAAQFRd?format=jpg&name=360x360">
+                            <div class="post-icons">
+                                <i class="icons fa-regular fa-comment blue"><a class="Post-icon-letters">2.8k</a> </i>
+                                <i class="icons fas fa-retweet green" aria-hidden="true">  <a class="Post-icon-letters">56.7k</a> </i>
+                                <i class=" icons far fa-heart red" aria-hidden="true">  <a class="Post-icon-letters">10.8K </a></i>
+                                <i class=" icons fa-solid blue fa-chart-column"> <a class="Post-icon-letters">99k</a></i>
+                                <i class="  icons fa-solid blue fa-arrow-up-from-bracket"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>   
+              </div>
+              <!-- searchbar starts-->
+              <div class="right-sidebar">
+                <div class="searchbar">
+                  <div class="search-icon">
+                    <span>
+                        <i class="fars fa-solid fa-magnifying-glass far " aria-hidden="true" style="color: #030408;"></i>
+                    </span>
+                  </div>
+                  <form action="">
+                    <input type="text" placeholder="Search Twitter" name="q" fdprocessedid="4nv34s">
+                  </form>
+                </div>
+                <!-- TRENDS -->
+                <div class="trends-for-you">
+                  <div class="trends-for-you__heading">
+                    Trends for you
+                  </div>
+                  <div class="trends-for-you__block">
+                    <div class="trends-for-you__meta-information">
+                      Trending 
+                      <div class="dots">
+                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
+                      </div>   
+                    </div>
+                 
+                    <div class="trend-name">
+                      <span>
+                       #ANC
+                      </span>  
+                    </div>
+                    <div class="trends-for-you__meta-information">
+                      9,678 Tweets
+                    </div>
+                  </div>
+                  <div class="trends-for-you__block">
+                    <div class="trends-for-you__meta-information">
+                      Trending in South Africa
+                      <div class="dots">
+                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
+                      </div> 
+                    </div>
+                    <div class="trend-name">
+                      <span>
+                       MissSA
+                      </span>  
+                    </div>
+                    <div class="trends-for-you__meta-information">
+                      10,890 Tweets
+                    </div>
+                  </div>
+                  <div class="trends-for-you__block">
+                    <div class="trends-for-you__meta-information">
+                      Trending in South Africa
+                      <div class="dots">
+                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
+                      </div> 
+                    </div>
+                    <div class="trend-name">
+                      <span>
+                       Gas JHB
+                      </span>  
+                    </div>
+                    <div class="trends-for-you__meta-information">
+                      12,123 Tweets
+                    </div>
+                  </div>
+                  <div class="trends-for-you__block">
+                    <div class="trends-for-you__meta-information">
+                      Trending in South Africa
+                      <div class="dots">
+                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
+                      </div> 
+                    </div>
+                    <div class="trend-name">
+                      <span>
+                        Mandela Day
+                      </span>  
+                    </div>
+                    <div class="trends-for-you__meta-information">
+                      3,324 Tweets
+                    </div>
+                  </div>
+                  <div class="trends-for-you__block">
+                    <div class="trends-for-you__meta-information">
+                      Trending in South Africa
+                      <div class="dots">
+                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
+                      </div> 
+                    </div>
+                    <div class="trend-name">
+                      <span>
+                       #IdolsSA
+                      </span>  
+                    </div>
+                    <div class="trends-for-you__meta-information">
+                      19,122 Tweets
+                    </div>
+                  </div>
+                  <div class="show-more">
+                    <a href="">Show More</a>
+                  </div>
+                </div>
+                <!-- FOOTER INFO -->
+                <div class="footer-info">
+                  <div class="footer-section">
+                    <span>Terms of Services</span>
+                    <span>Privacy Policy</span>
+                    <span>Cookie Policy</span>
+                    <span>Accessibility</span>
+                    <span>Ads info</span>
+                    <span>More...</span>
+                  </div>
+                  <span class="copyright">
+                    © 2022 Zaio Twitter Clone, Inc
+                  </span>
+                </div>
+              </div>
+        </div>
 </body>
 </html>
