@@ -24,10 +24,6 @@ body {
     display: flex; 
 }
 
-.twitter-logo {
-    font-size: larger;
-}
-
 
 .navbar {
     border-right: 1px solid #e8e8e8;
@@ -36,7 +32,6 @@ body {
     margin-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
-    
 }
 
 
@@ -46,8 +41,7 @@ body {
     min-width: fit-content;
     overflow-y: scroll;
     display: block;
-    border-bottom: 1px solid #e8e8e8; 
-    
+    border-bottom: 1px solid #e8e8e8;  
 }
 
 .main ::-webkit-scrollbar {
