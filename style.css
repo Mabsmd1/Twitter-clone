@@ -1,0 +1,154 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    cursor: pointer;
+}
+
+.nav-icon {
+    width: 25px;
+}
+
+.post-btn {
+    width: 100%;
+    font-weight: 600;
+}
+
+.material-icons {
+    font-size: 30px;
+}
+
+.nav-hover:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.trends-hover:hover {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+.posts-hover:hover {
+    background-color: rgb(247, 246, 246);
+    cursor: pointer;
+}
+
+.no-border {
+    border: 0;
+    outline: none;
+    line-break: auto;
+    resize: none;
+}
+
+.sidebar {
+    overflow-y: auto;
+}
+
+.fs-small {
+    font-size: 0.9rem;
+}
+
+.post-tweets {
+    display: flex;
+    border-bottom: 1px solid #e6ecf0;
+    margin-top: 2px;
+    padding: 10px 15px;
+}
+
+.author-logo {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header {
+    display: flex;
+}
+
+.author-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #14171a;
+    margin-right: 5px;
+}
+
+.author-username {
+        color: #5b7083;
+        font-size: 15px;
+}
+
+.published-time {
+    margin-left: 5px;
+    color: #657786;
+}
+ 
+.post-img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+
+.post-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+}
+
+.post-icons i {
+    color: rgb(146, 150, 153);
+    font-size: 8pt;
+    cursor: pointer;
+    font-weight: 400px;
+    
+}
+
+.post-icons i:last-child {
+    font-size: 14px;
+    font-weight: 900;
+    
+}
+
+a  {
+    color: rgb(146, 150, 153);
+    text-decoration: none;
+}
+
+.rounded-circle {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: .5rem!important;;
+}
+
+.main-top-transparent {
+    background-color: rgb(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+}
+
+.footer {
+    font-size: 0.8rem;
+}
+
+.footer > span:not(.d-flex):hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer > span:nth-child(6) > span:nth-child(1):hover {
+    text-decoration: underline;
+}
+
+.bg-rightbar {
+    background-color: #f7f9f9;
+}

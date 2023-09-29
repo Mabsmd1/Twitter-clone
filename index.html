@@ -3,271 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / X</title>
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4d0ff08464.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Twitter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="layout">
-        <!--sidebar-->
-        <div class="navbar left-sidebar">
-            <ul>
-                <li class="nav-items logo"><a href="#"><i class="fa-brands fa-x-twitter" style="color: #030408;"></i></a></li>
-                <li class="nav-items active-page"><a href="#"><i class="fars fa-solid fa-house" style="color: #030408;"></i>Home</a></li>
-                <li class="nav-items"><a href="#"><i class="fars fa-solid fa-magnifying-glass far " aria-hidden="true" style="color: #030408;"></i>Explore</a></li>
-                <li class="nav-items"><a href="#"><i class=" fars far fa-bell" aria-hidden="true" style="color: #030408;"></i>Notifications</a></li>
-                <li class="nav-items"><a href="#"><i class="fars far fa-regular fa-envelope" aria-hidden="true" style="color: #030408;"></i>Messages</a></li>
-                <li class="nav-items"><a href="#"><i class=" fars far fa-solid fa-bars" aria-hidden="true" style="color: #030408;"></i>Lists</a></li>
-                <li class="nav-items"><a href="#"><i class=" fars far fa-user" aria-hidden="true" style="color: #030408;"></i>Communities</a></li>
-                <li class="nav-items"><a href="#"><i class="fars fa-brands fa-x-twitter" style="color: #030408;"></i>Verified</a></li>
-                <li class="nav-items"><a href="#"><i class="fars fa-regular fa-user" style="color: #030408;"></i>Profile</a></li>
-                <li class="nav-items"><a href="#"><i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>More</a></li>
-                <button class="btn-btn">Post</button>
-                <div class="profile-info">
-                    <div style="height: 20px; width: 20px;"><div style="height: calc(100% - -4px); width: calc(100% - -4px);"></div></div><div class="avatar" style="background-image: url(&quot;https://pbs.twimg.com/profile_images/1559818413052252160/SgnrPNUd_normal.png&quot;);"></div>
-                    <div class="profile-links">
-                      <p class="profile-name">Mabel Mabs</p>
-                        <p class="user-name">@Mabelmabs1</p>  
+    <div class="container-fluid">
+        <div class="row px-sm-3">
+            <div class="sidebar border-end sticky-top col-3 d-none d-sm-flex flex-column justify-content-between ps-5 vh-100">
+                <div>
+                    <div class="logo my-2 mx-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                        </svg>
                     </div>
-
-                    <div class="options-icon"><i class="fas fa-caret-down" aria-hidden="true"></i></div>
+                    <div class="navigation d-flex align-items-start flex-column mt-4 ">
+                        <div class="fs-5 fw-bold d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons">home</span>
+                            <span>Home</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons">search</span>
+                            <span>Explore</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">notifications</span>
+                            <span>Notifications</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">mail</span>
+                            <span>Messages</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">article</span>
+                            <span>Lists</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">people</span>
+                            <span>Communities</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                            </svg>
+                            <span>Verified</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">person</span>
+                            <span>Profile</span>
+                        </div>
+                        <div class="fs-5 d-flex align-items-center gap-3 p-2 pe-4 rounded-pill nav-hover">
+                            <span class="material-icons-outlined">pending</span>
+                            <span>More</span>
+                        </div>
+                        <button class="btn btn-primary post-btn rounded-pill fs-5 mt-3 p-2" type="button">Post</button>
+                    </div>
                 </div>
-            </ul>
-        </div>
-
-        <!--Main Feed-->
-        <div class="main">
-            <div class="tweet-sticky">
-                <div class="home">
-                    <span>Home</span>
+                <div class="user-options d-flex align-items-center p-2 mb-3 rounded-pill nav-hover">
+                    <img class="rounded-circle me-2" src="./assets/Sinah 2.jpg"></img>
+                    <div>
+                        <span class="fw-bold">Mabel Mabs</span>
+                        <span class="text-secondary">@Mabelmabs1</span>
+                    </div>
+                    <span class="material-icons-outlined">more_horiz</span>
                 </div>
-                <ul class="tweet-container">
-                    <li><a href="#"><span>For You</span></a></li>
-                    <li><a href="#" class="following">Following</a></li>
-                </ul>
             </div>
-            <div class="your-tweets">
-                <div class="profile-message">
-                  <div style="height: 20px; width: 20px;"><div style="height: calc(100% - -4px); width: calc(100% - -4px);"></div></div><div class="avatar" style="background-image: url(&quot;https://pbs.twimg.com/profile_images/1559818413052252160/SgnrPNUd_normal.png&quot;);"></div>
-                  <span class="tweet-message"><input type="text" style="border: none;" placeholder="What's happening?!"></span>
+            <main class="col-sm-5 p-0">
+                <div class="sticky-top main-top-transparent border-bottom">
+                    <p class="fs-5 fw-bold p-3 mb-0">Home</p>
+                    <div class="d-flex">
+                        <div class="d-flex flex-grow-1 justify-content-center nav-hover">
+                            <span class="h-100 py-3 border-bottom  border-3 border-primary fw-bold">For you</span>
+                        </div>
+                        <div class="d-flex flex-grow-1 justify-content-center nav-hover">
+                            <span class="py-3">Following</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row border-bottom d-flex justify-content-center m-0">
+                    <div class="d-none d-sm-flex">
+                        <img class="rounded-circle me-2" src="./assets/Sinah 2.jpg"></img>
+                        <div class="d-flex flex-column px-2 pt-2 w-100">
+                            <textarea class="fs-5 no-border" rows="1" type="text" placeholder="What is happening?!"></textarea>
+                            <div class="d-flex justify-content-between py-3">
+                                <div class="text-primary d-flex align-items-center">
+                                    <span class="post-addition material-icons-outlined p-2">image</span>
+                                    <span class="post-addition material-icons-outlined p-2">gif_box</span>
+                                    <span class="post-addition material-icons-outlined p-2">format_list_bulleted</span>
+                                    <span class="post-addition material-icons-outlined p-2">sentiment_satisfied</span>
+                                    <span class="post-addition material-icons-outlined p-2">free_cancellation</span>
+                                    <span class="post-addition material-icons-outlined p-2">location_on</span>
+                                </div>
+                                <button class="btn btn-primary rounded-pill fw-bold px-3 disabled">Post</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="tweet-form">
-                    <div class="tweet-icons">
-                        <i class="profile-icon far fa-image"></i>
-                        <i class="profile-icon far fa-file-image" aria-hidden="true"></i>
-                        <i class="profile-icon fas fa-stream" aria-hidden="true"></i>
-                        <i class=" profile-icon fa-regular fa-face-smile"></i>
-                        <i class=" profile-icon far fa-calendar-check" aria-hidden="true"></i>
-                        <i class=" profile-icon fa-solid fa-location-dot"></i>
-                    </div>
-                    <button class="btn" type="submit">Post</button>
-                  </div>
-              </div>
-
-              <!--Tweets-->
-              <div class="post-tweets">
-                <img class="author-logo" src="./assets/image.jpeg">
-                <div class="post-main">
-                  <div class="post-header">
-                    <div class="author-name">
-                      Selinah Stock
-                    </div>
-                    <div class="author-username">
-                      @stock.sel
-                    </div>
-                    <div class="published-time">
-                      15s
-                    </div>
-                  </div>
-                  <div class="post-content">
-                    Feel, live through images!! 
-                    <img class="post-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1_6EgOCnoYi1sxCp6puG0Y75wrG8xfwECuHckrl_Pu8U_xDNdeEBinQB8cAgpRSM4t4&usqp=CAU">
-                    <div class="post-icons">
-                        <i class="icons fa-regular fa-comment blue"><a class="Post-icon-letters">201</a> </i>
-                        <i class="icons fas fa-retweet green" aria-hidden="true">  <a class="Post-icon-letters">567</a> </i>
-                        <i class=" icons far fa-heart red" aria-hidden="true">  <a class="Post-icon-letters">10.879K </a></i>
-                        <i class=" icons fa-solid blue fa-chart-column"> <a class="Post-icon-letters">69753</a></i>
-                        <i class="  icons fa-solid blue fa-arrow-up-from-bracket"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div class="post-tweets">
-                    <img class="author-logo" src="./assets/img-twitter.png">
+                    <img class="author-logo" src="./assets/image.jpeg">
                     <div class="post-main">
                       <div class="post-header">
                         <div class="author-name">
-                          Elon Musk
-                          
+                          Selinah Stock
                         </div>
                         <div class="author-username">
-                          @elonmusk
+                          @stock.sel
                         </div>
                         <div class="published-time">
-                          1hr
+                          15s
                         </div>
                       </div>
                       <div class="post-content">
-                        Anyone feeling late stage empire vibes?
-                        <img class="post-img" src="https://pbs.twimg.com/media/F62QKe2XYAAMd3o?format=jpg&name=small">
+                        Feel, live through images!! 
+                        <img class="post-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1_6EgOCnoYi1sxCp6puG0Y75wrG8xfwECuHckrl_Pu8U_xDNdeEBinQB8cAgpRSM4t4&usqp=CAU">
                         <div class="post-icons">
-                            <i class="icons fa-regular fa-comment blue"><a class="Post-icon-letters">2.8mil</a> </i>
-                            <i class="icons fas fa-retweet green" aria-hidden="true">  <a class="Post-icon-letters">567.7k</a> </i>
-                            <i class=" icons far fa-heart red" aria-hidden="true">  <a class="Post-icon-letters">100.8K </a></i>
-                            <i class=" icons fa-solid blue fa-chart-column"> <a class="Post-icon-letters">69k</a></i>
+                            <i class="icons fa-regular fa-comment blue"><a class="Post-icon-letters">201</a> </i>
+                            <i class="icons fas fa-retweet green" aria-hidden="true">  <a class="Post-icon-letters">567</a> </i>
+                            <i class=" icons far fa-heart red" aria-hidden="true">  <a class="Post-icon-letters">10.879K </a></i>
+                            <i class=" icons fa-solid blue fa-chart-column"> <a class="Post-icon-letters">69753</a></i>
                             <i class="  icons fa-solid blue fa-arrow-up-from-bracket"></i>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="post-tweets">
-                        <img class="author-logo" src="./assets/img4.jpeg">
+                        <img class="author-logo" src="./assets/img-twitter.png">
                         <div class="post-main">
                           <div class="post-header">
                             <div class="author-name">
-                              Volvo
+                              Elon Musk
+                              
                             </div>
                             <div class="author-username">
-                              @volvo
+                              @elonmusk
                             </div>
                             <div class="published-time">
-                              30min
+                              1hr
                             </div>
                           </div>
                           <div class="post-content">
-                            Meet the new #VolvoEX90. Our first fully electric SUV Featuring Safe Space Technology powered by lidar and a serene Scandinavian interior. The Volvo EX90 offers a driving experience out of the ordinary. 
-                            Pre-order today https://volvoca.rs/3G15RAH #SafetyInMind
-                            <img class="post-img" src="https://pbs.twimg.com/media/FhMPXbIWIAAQFRd?format=jpg&name=360x360">
+                            Anyone feeling late stage empire vibes?
+                            <img class="post-img" src="https://pbs.twimg.com/media/F62QKe2XYAAMd3o?format=jpg&name=small">
                             <div class="post-icons">
-                                <i class="icons fa-regular fa-comment blue"><a class="Post-icon-letters">2.8k</a> </i>
-                                <i class="icons fas fa-retweet green" aria-hidden="true">  <a class="Post-icon-letters">56.7k</a> </i>
-                                <i class=" icons far fa-heart red" aria-hidden="true">  <a class="Post-icon-letters">10.8K </a></i>
-                                <i class=" icons fa-solid blue fa-chart-column"> <a class="Post-icon-letters">99k</a></i>
+                                <i class="icons fa-regular fa-comment blue"><a class="Post-icon-letters">2.8mil</a> </i>
+                                <i class="icons fas fa-retweet green" aria-hidden="true">  <a class="Post-icon-letters">567.7k</a> </i>
+                                <i class=" icons far fa-heart red" aria-hidden="true">  <a class="Post-icon-letters">100.8K </a></i>
+                                <i class=" icons fa-solid blue fa-chart-column"> <a class="Post-icon-letters">69k</a></i>
                                 <i class="  icons fa-solid blue fa-arrow-up-from-bracket"></i>
                               </div>
                             </div>
                           </div>
-                        </div>   
-              </div>
-              <!-- searchbar starts-->
-              <div class="right-sidebar">
-                <div class="searchbar">
-                  <div class="search-icon">
-                    <span>
-                        <i class="fars fa-solid fa-magnifying-glass far " aria-hidden="true" style="color: #030408;"></i>
-                    </span>
-                  </div>
-                  <form action="">
-                    <input type="text" placeholder="Search Twitter" name="q" fdprocessedid="4nv34s">
-                  </form>
+                        </div>
+                        <div class="post-tweets">
+                            <img class="author-logo" src="./assets/img4.jpeg">
+                            <div class="post-main">
+                              <div class="post-header">
+                                <div class="author-name">
+                                  Volvo
+                                </div>
+                                <div class="author-username">
+                                  @volvo
+                                </div>
+                                <div class="published-time">
+                                  30min
+                                </div>
+                              </div>
+                              <div class="post-content">
+                                Meet the new #VolvoEX90. Our first fully electric SUV Featuring Safe Space Technology powered by lidar and a serene Scandinavian interior. The Volvo EX90 offers a driving experience out of the ordinary. 
+                                Pre-order today https://volvoca.rs/3G15RAH #SafetyInMind
+                                <img class="post-img" src="https://pbs.twimg.com/media/FhMPXbIWIAAQFRd?format=jpg&name=360x360">
+                                <div class="post-icons">
+                                    <i class="icons fa-regular fa-comment blue"><a class="Post-icon-letters">2.8k</a> </i>
+                                    <i class="icons fas fa-retweet green" aria-hidden="true">  <a class="Post-icon-letters">56.7k</a> </i>
+                                    <i class=" icons far fa-heart red" aria-hidden="true">  <a class="Post-icon-letters">10.8K </a></i>
+                                    <i class=" icons fa-solid blue fa-chart-column"> <a class="Post-icon-letters">99k</a></i>
+                                    <i class="  icons fa-solid blue fa-arrow-up-from-bracket"></i>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+            </main>
+            <div class="rightbar d-none d-sm-block col-4 border-start px-4">
+                <div class="bg-white sticky-top p-1">
+                    <div class="bg-rightbar rounded-pill d-flex align-items-center gap-2 p-2">
+                        <span class="text-secondary material-icons-outlined">search</span>
+                        <input class="flex-grow-1 no-border bg-rightbar" type="text" placeholder="Search">
+                    </div>
                 </div>
-                <!-- TRENDS -->
-                <div class="trends-for-you">
-                  <div class="trends-for-you__heading">
-                    Trends for you
-                  </div>
-                  <div class="trends-for-you__block">
-                    <div class="trends-for-you__meta-information">
-                      Trending 
-                      <div class="dots">
-                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
-                      </div>   
-                    </div>
-                 
-                    <div class="trend-name">
-                      <span>
-                       #ANC
-                      </span>  
-                    </div>
-                    <div class="trends-for-you__meta-information">
-                      9,678 Tweets
-                    </div>
-                  </div>
-                  <div class="trends-for-you__block">
-                    <div class="trends-for-you__meta-information">
-                      Trending in South Africa
-                      <div class="dots">
-                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
-                      </div> 
-                    </div>
-                    <div class="trend-name">
-                      <span>
-                       MissSA
-                      </span>  
-                    </div>
-                    <div class="trends-for-you__meta-information">
-                      10,890 Tweets
-                    </div>
-                  </div>
-                  <div class="trends-for-you__block">
-                    <div class="trends-for-you__meta-information">
-                      Trending in South Africa
-                      <div class="dots">
-                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
-                      </div> 
-                    </div>
-                    <div class="trend-name">
-                      <span>
-                       Gas JHB
-                      </span>  
-                    </div>
-                    <div class="trends-for-you__meta-information">
-                      12,123 Tweets
-                    </div>
-                  </div>
-                  <div class="trends-for-you__block">
-                    <div class="trends-for-you__meta-information">
-                      Trending in South Africa
-                      <div class="dots">
-                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
-                      </div> 
-                    </div>
-                    <div class="trend-name">
-                      <span>
-                        Mandela Day
-                      </span>  
-                    </div>
-                    <div class="trends-for-you__meta-information">
-                      3,324 Tweets
-                    </div>
-                  </div>
-                  <div class="trends-for-you__block">
-                    <div class="trends-for-you__meta-information">
-                      Trending in South Africa
-                      <div class="dots">
-                        <i class="fas fars fa-ellipsis-h more-icon" aria-hidden="true" style="color: #030408;"></i>
-                      </div> 
-                    </div>
-                    <div class="trend-name">
-                      <span>
-                       #IdolsSA
-                      </span>  
-                    </div>
-                    <div class="trends-for-you__meta-information">
-                      19,122 Tweets
-                    </div>
-                  </div>
-                  <div class="show-more">
-                    <a href="">Show More</a>
-                  </div>
+                <div class="bg-rightbar rounded my-3 p-3">
+                    <h2 class="fs-5 fw-bold">Subscribe to Premium</h2>
+                    <p class="fw-bold">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                    <button class="btn btn-dark fw-bold rounded-pill px-3" type="button">Subscribe</button>
                 </div>
-                <!-- FOOTER INFO -->
-                <div class="footer-info">
-                  <div class="footer-section">
-                    <span>Terms of Services</span>
+                <div class="bg-rightbar rounded my-3 pt-3">
+                    <h2 class="fs-5 fw-bold p-2 px-3">Trends for you</h2>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Sports &#x2022; Trending </span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>#Springboks</b></p>
+                        <p class="text-secondary fs-small m-0">4,216 posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                        <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>Maphosa</b></p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>#Amapiano</b></p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>#Loashedding</b></p>
+                        <p class="text-secondary fs-small">2,000 posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>#Haval</b></p>
+                        <p class="text-secondary fs-small m-0">1,046 posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>Kayharms</b></p>
+                        <p class="text-secondary fs-small m-0">2,543 posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Travel &#x2022; Trending </span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>Mpumalanga</b></p>
+                        <p class="text-secondary fs-small m-0">2,312 posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Sports &#x2022; Trending </span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>#Chiefs</b></p>
+                        <p class="text-secondary fs-small m-0">5,475 posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Trending in South Africa</span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>#MojaLOve</b></p>
+                        <p class="text-secondary fs-small m-0">1,699 posts</p>
+                    </div>
+                    <div class="trends-hover py-2 px-3">
+                        <div class="text-secondary fs-small  m-0">
+                            <span class="">Music &#x2022; Trending </span>
+                            <span class="post-action-options float-end text-secondary material-icons-outlined p-1">more_horiz</span>
+                        </div>
+                        <p class="m-0"><b>AKA</b></p>
+                        <p class="text-secondary fs-small m-0">2,809 posts</p>
+                    </div>
+                    <div class="trends-hover rounded-bottom py-3 px-3">
+                        <p class="text-primary m-0">Show More</p>
+                    </div>
+                </div>
+                <div class="footer text-secondary d-flex flex-wrap align-items-center gap-2 px-3">
+                    <span>Terms of service</span>
                     <span>Privacy Policy</span>
                     <span>Cookie Policy</span>
-                    <span>Accessibility</span>
+                    <span>Accessiblity</span>
                     <span>Ads info</span>
-                    <span>More...</span>
-                  </div>
-                  <span class="copyright">
-                    © 2022 Zaio Twitter Clone, Inc
-                  </span>
+                    <span class="d-flex">
+                        <span>More</span>
+                        <span class="material-icons-outlined">more_horiz</span>
+                    </span>
+                    <span>© 2023 X Corp.</span>
                 </div>
-              </div>
-        </div>
+            </div>
+        </div>     
+    </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
