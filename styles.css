@@ -452,12 +452,15 @@ ul.tweet-container li a:hover {
     margin-left: 5px;
     color: #657786;
 }
-
+ 
 .post-img {
     width: 100%;
     border-radius: 15px;
     margin-top: 10px;
 }
+
+
+
 
 .post-icons {
     display: flex;
@@ -481,3 +484,45 @@ ul.tweet-container li a:hover {
     font-weight: 900;
 }
 
+
+/* Small screens (e.g., phones)
+@media (max-width: 480px) {
+.left-sidebar {
+    display: none;
+}
+
+.right-sidebar {
+    display: none;
+}
+
+
+.directory {
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    height: 53px;
+    width: 25.29rem;
+    z-index: 1;
+}
+}
+*/
+ /* Stack columns on top of each other 
+@media (max-width: 576px) {
+    .layout {
+        grid-template-columns: auto; 
+    }
+
+    .navbar {
+        display: none; 
+    }
+
+    .main {
+        flex: 10;
+        width: 100%;
+         /* Expand main content to fill the space */
+   
+
+*/
